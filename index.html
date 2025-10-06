@@ -3,49 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Your Name | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9b6e38c.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-  <header>
-    <h1>Hi, I'm Your Name 👋</h1>
-    <p>DevOps Engineer | Cloud Enthusiast | Tech Explorer</p>
+<body>
+  <header class="hero">
+    <nav>
+      <h1 class="logo">My<span>Portfolio</span></h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic" />
+      <h2>Hi, I'm <span>Your Name</span></h2>
+      <p>Associate DevOps Engineer | Cloud Enthusiast | Tech Explorer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
   </header>
 
-  <section id="about">
-    <img src="images/profile.jpg" alt="Profile Photo" class="profile-img" />
+  <section id="about" class="fade-in">
     <h2>About Me</h2>
     <p>
-      I’m an Associate DevOps Engineer passionate about automation, cloud infrastructure, and CI/CD pipelines. 
-      I enjoy learning new technologies and improving system performance.
+      I’m an Associate DevOps Engineer with hands-on experience in cloud platforms, CI/CD, and automation. 
+      I’m passionate about building reliable systems and optimizing performance through containerization and monitoring.
     </p>
   </section>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <img src="images/project1.jpg" alt="Project 1" />
-      <h3>Grafana Monitoring Stack</h3>
-      <p>Dockerized Grafana, Prometheus, Loki, and Node Exporter stack for infrastructure monitoring.</p>
-    </div>
-
-    <div class="project">
-      <img src="images/project2.jpg" alt="Project 2" />
-      <h3>CI/CD Pipeline</h3>
-      <p>Automated deployment using Jenkins and GitLab CI/CD for AWS EC2 environments.</p>
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project 1">
+        <h3>Grafana Monitoring Stack</h3>
+        <p>Built a monitoring stack using Grafana, Prometheus, Loki, and Node Exporter on Docker.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 2">
+        <h3>CI/CD Pipeline</h3>
+        <p>Developed an automated Jenkins + GitLab CI/CD pipeline for AWS EC2 deployments.</p>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-    <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+    <p>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+      <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </p>
   </section>
 
   <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
+    <p>© 2025 Your Name | Built with ❤️ and HTML, CSS, JS</p>
   </footer>
 
   <script src="script.js"></script>
