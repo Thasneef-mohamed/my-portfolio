@@ -1,9 +1,11 @@
-// Simple animation on load
-document.addEventListener("DOMContentLoaded", () => {
-    document.body.style.opacity = 0;
-    setTimeout(() => {
-      document.body.style.transition = "opacity 1s";
-      document.body.style.opacity = 1;
-    }, 100);
+// Fade-in animation on scroll
+const fadeEls = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+  fadeEls.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      el.classList.add('visible');
+    }
   });
-  
+});
